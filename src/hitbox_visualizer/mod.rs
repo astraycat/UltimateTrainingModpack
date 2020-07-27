@@ -158,10 +158,6 @@ pub unsafe fn get_command_flag_cat(
     module_accessor: &mut app::BattleObjectModuleAccessor,
     category: i32,
 ) {
-    if !is_training_mode() {
-        return;
-    }
-
     // apply only once per frame
     if category != 0 {
         return;
@@ -227,10 +223,6 @@ unsafe fn handle_attack(lua_state: u64) {
 }
 
 unsafe fn mod_handle_attack(lua_state: u64) {
-    if !is_training_mode() {
-        return;
-    }
-
     let mut l2c_agent = L2CAgent::new(lua_state);
 
     // hacky way of forcing no shield damage on all hitboxes
@@ -288,10 +280,6 @@ unsafe fn handle_catch(lua_state: u64) {
 }
 
 unsafe fn mod_handle_catch(lua_state: u64) {
-    if !is_training_mode() {
-        return;
-    }
-
     if MENU.hitbox_vis == HitboxVisualization::Off {
         return;
     }
@@ -335,10 +323,6 @@ unsafe fn mod_handle_handle_set_rebound(
     module_accessor: *mut app::BattleObjectModuleAccessor,
     rebound: bool,
 ) {
-    if !is_training_mode() {
-        return;
-    }
-
     if rebound != false {
         return;
     }

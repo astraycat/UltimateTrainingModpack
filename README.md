@@ -1,4 +1,4 @@
-# Ultimate Training Modpack Plugin
+# Ultimate Training Modpack Plugin FORK for Hitbox Visualization in Smash mode
 
 [![GitHub All Releases](https://img.shields.io/github/downloads/jugeeya/UltimateTrainingModpack/total?logo=download&style=for-the-badge)](https://github.com/jugeeya/UltimateTrainingModpack/releases)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jugeeya/UltimateTrainingModpack/Rust?style=for-the-badge)](https://github.com/jugeeya/UltimateTrainingModpack/actions)
